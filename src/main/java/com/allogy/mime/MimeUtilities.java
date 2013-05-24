@@ -16,8 +16,6 @@
 
 package com.allogy.mime;
 
-import org.apache.commons.fileupload.MultipartStream;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -25,8 +23,8 @@ import java.io.OutputStream;
 
 public class MimeUtilities
 {
-	static final int CarriageReturnCharacter = MultipartStream.CR;
-	static final int LineFeedCharacter = MultipartStream.LF;
+	static final int CarriageReturnCharacter = 0x0D;
+	static final int LineFeedCharacter = 0x0A;
 	static final String CRLFEnding = new String(new char[] { CarriageReturnCharacter, LineFeedCharacter});
 
 	static int readToCharacter(int stopCharacter, InputStream stream, OutputStream outputStream) throws IOException
