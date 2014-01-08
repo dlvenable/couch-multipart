@@ -26,7 +26,6 @@ import org.apache.http.HttpHeaders;
 import org.apache.http.NameValuePair;
 import org.codehaus.jackson.JsonFactory;
 import org.codehaus.jackson.JsonParser;
-import temp.org.ektorp.support.AttachmentsInOrderParser;
 
 import java.io.IOException;
 import java.io.InputStream;

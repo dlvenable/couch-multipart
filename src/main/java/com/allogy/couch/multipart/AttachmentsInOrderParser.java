@@ -1,4 +1,4 @@
-package temp.org.ektorp.support;
+package com.allogy.couch.multipart;
 
 
 import org.codehaus.jackson.JsonParseException;
@@ -11,8 +11,7 @@ import java.util.List;
 
 /**
  * This is available in Ektorp source, but not in a release as of 1.3.0.
- *
- * TODO: Remove once it is available in Ektorp.
+ * Including it here also allows us to keep Ektorp out of the dependency list.
  *
  * A document's MIME multipart/related representation produced by CouchDB
  * uses the order of the attachments in the JSON _attachments object as the
@@ -23,7 +22,7 @@ import java.util.List;
  *
  * @author David Venable
  */
-public class AttachmentsInOrderParser
+class AttachmentsInOrderParser
 {
     private static final String ATTACHMENTS_NAME = "_attachments";
 
