@@ -17,7 +17,7 @@
 package com.allogy.couch.multipart;
 
 import com.allogy.mime.MimeStreamingReader;
-import org.w3c.www.mime.MultipartInputStream;
+import com.allogy.mime.MultipartInputStream;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -17,6 +17,7 @@
 package com.allogy.couch.multipart;
 
 import com.allogy.mime.MimeStreamingReader;
+import com.allogy.mime.MultipartInputStream;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
 import org.apache.commons.io.IOUtils;
@@ -26,7 +27,6 @@ import org.apache.http.NameValuePair;
 import org.codehaus.jackson.JsonFactory;
 import org.codehaus.jackson.JsonParser;
 import temp.org.ektorp.support.AttachmentsInOrderParser;
-import org.w3c.www.mime.MultipartInputStream;
 
 import java.io.IOException;
 import java.io.InputStream;
